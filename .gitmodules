@@ -1,0 +1,3 @@
+[submodule "libsrc/tls-attack"]
+	path = libsrc/tls-attack
+	url = https://github.com/RUB-NDS/TLS-Attacker.git

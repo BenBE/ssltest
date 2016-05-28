@@ -41,6 +41,14 @@
                 <include name="**/servlet-api-*.jar" />
             </patternset>
         </unzip>
+        <exec dir="./libsrc/tls-attack" executable="./mvnw">
+            <arg value="package" />
+        </exec>
+        <copy includeemptydirs="false" todir="libs" flatten="true">
+            <fileset dir="libsrc/tls-attack">
+                <include name="**/*.jar" />
+            </fileset>
+        </copy>
     </target>
     <target name="init">
         <mkdir dir="bin" />
